@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Luckiest Guy', 'Comic Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f7cac9 0%, #92a8d1 100%);
+            margin: 0; padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fffbe7;
+            box-shadow: 0 4px 24px #e0a800;
+            border-radius: 18px;
+            padding: 32px 24px 24px 24px;
+            border: 4px solid #222;
+        }
+        .header {
+            text-align: center;
+            font-size: 2.8em;
+            color: #d7263d;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-family: 'Luckiest Guy', cursive;
+            text-shadow: 2px 2px 0 #fff, 4px 4px 0 #222;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+            font-family: 'Comic Neue', Arial, sans-serif;
+        }
+        .comic-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 28px;
+        }
+        .comic-list li {
+            background: #fff;
+            border: 3px solid #222;
+            border-radius: 12px;
+            box-shadow: 2px 2px 0 #d7263d, 4px 4px 0 #222;
+            width: 200px;
+            height: 260px;
+            transition: transform 0.15s, box-shadow 0.15s;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+        }
+        .comic-list li:hover {
+            transform: translateY(-8px) scale(1.04) rotate(-2deg);
+            box-shadow: 4px 8px 0 #d7263d, 8px 12px 0 #222;
+        }
+        .comic-cover {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 2px solid #d7263d;
+            background: #fff;
+            box-shadow: 0 2px 8px #bbb;
+            margin: 0;
+            flex-shrink: 0;
+        }
+        .comic-link {
+            display: block;
+            padding: 10px 0 0 0;
+            background: none;
+            color: #222;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1.15em;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        .comic-link:hover {
+            color: #d7263d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Comic Library</div>
+        <div class="subtitle">Choose your adventure! Dive into a world of stories.</div>
+        <ul class="comic-list">
+            <li>
+                <img class="comic-cover" src="operation banyanulmarsoos/titlepage.png" alt="Operation BUNYAN-UL-MARSOOS Cover">
+                <a class="comic-link" href="operation_banyanulmarsoos.html">Operation BUNYAN-UL-MARSOOS</a>
+            </li>
+            <li>
+                <img class="comic-cover" src="imran khan/1.png" alt="Imran Khan Cover">
+                <a class="comic-link" href="imran_khan.html">Imran Khan</a>
+            </li>
+            <li>
+                <img class="comic-cover" src="pakistanpolitical histroy/coing soon.png" alt="Pakistan Political History Cover">
+                <a class="comic-link" href="pakistanpolitical_histroy.html">Pakistan Political History</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
