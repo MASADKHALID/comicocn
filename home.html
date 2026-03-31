@@ -6,6 +6,19 @@
     <title>Comic Library</title>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <style>
+                        @media (max-width: 900px) {
+                            .comic-img, .comic-cover {
+                                max-height: 90vh;
+                                object-fit: contain;
+                            }
+                        }
+                /* Universal responsive image style for all comic images */
+                .comic-img, .comic-cover {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100vw;
+                    display: block;
+                }
         body {
             font-family: 'Luckiest Guy', 'Comic Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #f7cac9 0%, #92a8d1 100%);
@@ -57,13 +70,15 @@
                 gap: 14px;
             }
             .comic-list li {
-                width: 90vw;
-                max-width: 320px;
+                width: 98vw;
+                max-width: 340px;
                 height: auto;
                 min-height: 180px;
             }
             .comic-cover {
-                height: 140px;
+                width: 100%;
+                height: auto;
+                max-height: none;
             }
         }
         @media (min-width: 901px) {

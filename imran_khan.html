@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imran Khan</title>
     <style>
+                        @media (max-width: 900px) {
+                            .comic-img, .comic-cover {
+                                max-height: 90vh;
+                                object-fit: contain;
+                            }
+                        }
+                /* Universal responsive image style for all comic images */
+                .comic-img, .comic-cover {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100vw;
+                    display: block;
+                }
         body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
         .container { max-width: 600px; margin: 40px auto; background: #fff; box-shadow: 0 2px 8px #ccc; border-radius: 8px; padding: 24px; }
                         @media (max-width: 900px) {
@@ -16,8 +29,9 @@
                                 font-size: 1.3em;
                             }
                             .comic-img {
+                                width: 100%;
                                 height: auto;
-                                max-height: 220px;
+                                max-height: none;
                             }
                         }
                         @media (min-width: 901px) {
