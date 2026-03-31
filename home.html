@@ -44,6 +44,72 @@
             justify-content: center;
             gap: 28px;
         }
+        @media (max-width: 900px) {
+            .container {
+                max-width: 98vw;
+                padding: 10px 2vw 16px 2vw;
+                border-width: 2px;
+            }
+            .header {
+                font-size: 2em;
+            }
+            .comic-list {
+                gap: 14px;
+            }
+            .comic-list li {
+                width: 90vw;
+                max-width: 320px;
+                height: auto;
+                min-height: 180px;
+            }
+            .comic-cover {
+                height: 140px;
+            }
+        }
+        @media (min-width: 901px) {
+            .container {
+                max-width: 700px;
+                padding: 32px 24px 24px 24px;
+                border-width: 4px;
+            }
+            .header {
+                font-size: 2.8em;
+            }
+            .comic-list {
+                gap: 28px;
+            }
+            .comic-list li {
+                width: 200px;
+                height: 260px;
+            }
+            .comic-cover {
+                height: 180px;
+            }
+        }
+        }
+        @media (max-width: 600px) {
+            .container {
+                max-width: 98vw;
+                padding: 10px 2vw 16px 2vw;
+                border-width: 2px;
+            }
+            .header {
+                font-size: 2em;
+            }
+            .comic-list {
+                gap: 14px;
+            }
+            .comic-list li {
+                width: 90vw;
+                max-width: 320px;
+                height: auto;
+                min-height: 180px;
+            }
+            .comic-cover {
+                height: 140px;
+            }
+        }
+        }
         .comic-list li {
             background: #fff;
             border: 3px solid #222;

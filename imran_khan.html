@@ -7,6 +7,44 @@
     <style>
         body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
         .container { max-width: 600px; margin: 40px auto; background: #fff; box-shadow: 0 2px 8px #ccc; border-radius: 8px; padding: 24px; }
+                        @media (max-width: 900px) {
+                            .container {
+                                max-width: 98vw;
+                                padding: 10px 2vw 16px 2vw;
+                            }
+                            .title {
+                                font-size: 1.3em;
+                            }
+                            .comic-img {
+                                height: auto;
+                                max-height: 220px;
+                            }
+                        }
+                        @media (min-width: 901px) {
+                            .container {
+                                max-width: 600px;
+                                padding: 24px;
+                            }
+                            .title {
+                                font-size: 2em;
+                            }
+                            .comic-img {
+                                max-height: none;
+                            }
+                        }
+                @media (max-width: 600px) {
+                    .container {
+                        max-width: 98vw;
+                        padding: 10px 2vw 16px 2vw;
+                    }
+                    .title {
+                        font-size: 1.3em;
+                    }
+                    .comic-img {
+                        height: auto;
+                        max-height: 220px;
+                    }
+                }
         .comic-img { width: 100%; margin-bottom: 16px; border-radius: 4px; }
         .title { text-align: center; font-size: 2em; margin-bottom: 16px; }
         .end-message { text-align: center; margin-top: 32px; font-size: 1.2em; }
